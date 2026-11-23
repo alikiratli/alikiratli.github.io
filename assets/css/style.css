@@ -303,3 +303,46 @@ footer a:hover { color: var(--amber); }
   .dev-banner .btn { margin-left: 0; }
   .nav-right { gap: .8rem; }
 }
+
+/* ---------- Prüfungsbücher ---------- */
+.exam-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.6rem; }
+.exam-book {
+  background: var(--paper); border-radius: 20px; box-shadow: var(--shadow); padding: 1.5rem;
+  display: grid; grid-template-columns: 130px 1fr; gap: 1.4rem; align-items: start; transition: .25s;
+}
+.exam-book:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.exam-book > a img { border-radius: 6px; box-shadow: 0 10px 22px rgba(20,33,61,.22); aspect-ratio: 2 / 3; object-fit: cover; width: 100%; }
+.exam-book h3 { font-size: 1.2rem; margin: .5rem 0 .3rem; }
+.exam-book .sub { color: var(--amber-d); font-size: .85rem; font-weight: 600; display: block; margin-bottom: .6rem; }
+.exam-book p { color: var(--muted); font-size: .94rem; }
+.exam-book .actions { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; }
+.exam-book .actions .btn { padding: .55rem 1rem; font-size: .88rem; }
+.link-app { font-size: .88rem; font-weight: 600; color: var(--navy-2); text-decoration: none; }
+.link-app:hover { color: var(--amber-d); }
+
+/* Hinweis „Auch als Buch“ in App-Karten */
+.also-book {
+  display: flex; align-items: center; gap: .8rem; margin: 0 0 1.2rem; padding: .7rem .9rem;
+  background: #fdf6ea; border: 1px solid #f3dfbf; border-radius: 12px; text-decoration: none; color: var(--ink);
+  font-size: .92rem; transition: .2s;
+}
+.also-book:hover { background: #fbecd3; }
+.also-book img { width: 38px; border-radius: 3px; box-shadow: 0 3px 8px rgba(0,0,0,.2); }
+.also-book strong { color: var(--navy); }
+.also-book .arrow { margin-left: auto; color: var(--amber-d); font-weight: 700; white-space: nowrap; }
+@media (max-width: 960px) { .exam-grid { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .exam-book { grid-template-columns: 96px 1fr; padding: 1.1rem; gap: 1rem; } }
+
+/* Menü: ab 1080px Breite auf Hamburger umschalten (6 Menüpunkte + Sprachwahl) */
+.nav ul a { white-space: nowrap; }
+@media (max-width: 1080px) {
+  .nav-toggle { display: block; }
+  .nav ul {
+    position: absolute; top: 68px; left: 0; right: 0; background: var(--cream);
+    flex-direction: column; gap: 0; border-bottom: 1px solid var(--line); display: none;
+    box-shadow: 0 12px 24px rgba(20,33,61,.08);
+  }
+  .nav ul.open { display: flex; }
+  .nav ul a { display: block; padding: .9rem 4vw; }
+  .nav-right { gap: .8rem; }
+}
