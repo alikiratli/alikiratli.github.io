@@ -31,3 +31,8 @@ umwandeln und `<em>BALD</em>` durch `<em>AMAZON ›</em>` ersetzen.
 ## Hosting
 GitHub Pages: Repository `alikiratli/alikiratli.github.io`, Adresse https://alikiratli.github.io
 Änderungen veröffentlichen: `git add -A && git commit -m "..." && git push` – nach 1–2 Minuten online.
+
+## Blick ins Buch (Leseprobe)
+- Je 6 ausgewählte Seiten pro Ole-Buch liegen als WebP unter `assets/img/preview/<buch>/1.webp … 6.webp` (820 px breit, Wasserzeichen „LESEPROBE“).
+- Der Button `<button class="peek" data-book="rs-5" …>` unter jedem Cover öffnet die Ansicht (Code am Ende von `assets/js/main.js`). Kein Download-Button, Druckansicht blendet sie aus, Rechtsklick gesperrt.
+- Neues Buch: 6 Seiten rendern (gleiche Benennung) und den Button im Cover-Block in allen 3 Sprachen ergänzen.
