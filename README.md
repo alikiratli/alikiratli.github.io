@@ -36,3 +36,7 @@ GitHub Pages: Repository `alikiratli/alikiratli.github.io`, Adresse https://alik
 - Je 6 ausgewählte Seiten pro Ole-Buch liegen als WebP unter `assets/img/preview/<buch>/1.webp … 6.webp` (820 px breit, Wasserzeichen „LESEPROBE“).
 - Der Button `<button class="peek" data-book="rs-5" …>` unter jedem Cover öffnet die Ansicht (Code am Ende von `assets/js/main.js`). Kein Download-Button, Druckansicht blendet sie aus, Rechtsklick gesperrt.
 - Neues Buch: 6 Seiten rendern (gleiche Benennung) und den Button im Cover-Block in allen 3 Sprachen ergänzen.
+
+## Logo „AK Books“
+- Verlagskarte oben im Abschnitt „Lernbücher“ (Klasse `publisher-card`), verlinkt auf die Amazon-Autorenseite.
+- Datei: `assets/img/books/ak-books-logo.webp` (320 px, aus `Zarif AK Kitap Yayıncılık Logosu.png` verkleinert).
